@@ -1,3 +1,4 @@
+
 public class ExercitiiString{
     public static void main(String []args){
         String text = "Ana are 7 mere";
