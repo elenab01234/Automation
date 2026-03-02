@@ -10,36 +10,19 @@ public class tema02_04 {
     WebDriver driver1, driver2;
 
     @BeforeMethod
-    public void setUp1() {
+    public void setUp() {
         driver1 = new ChromeDriver();
-        driver1.get("https://example.com/");
+        driver2 = new ChromeDriver();
    }
 
     @Test
     public void goToURL1() {
-        String title = driver1.getTitle();
-        System.out.println(title);
-    }
-
-    @AfterMethod
-    public void tearDown1() {
-        driver1.quit();
-    }
-    
-    @BeforeMethod
-    public void setUp2() {
-        driver2 = new ChromeDriver();
+        driver1.get("https://example.com/");
         driver2.get("https://www.apple.com/");
     }
 
-    @Test
-    public void goToURL2() {
-        String title = driver2.getTitle();
-        System.out.println(title);
-
-    }
     @AfterMethod
-    public void tearDown2() {
-        driver2.quit();
+    public void tearDown() {
+        driver1.quit();driver2.quit();
     }
 }
