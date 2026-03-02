@@ -7,22 +7,26 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class tema02_04 {
-    WebDriver driver1, driver2;
+    WebDriver driver;
 
     @BeforeMethod
     public void setUp() {
-        driver1 = new ChromeDriver();
-        driver2 = new ChromeDriver();
+        driver = new ChromeDriver();
    }
-
-    @Test
-    public void goToURL1() {
-        driver1.get("https://example.com/");
-        driver2.get("https://www.apple.com/");
-    }
 
     @AfterMethod
     public void tearDown() {
-        driver1.quit();driver2.quit();
+        driver.quit();
     }
+
+    @Test
+    public void goToURL1() {
+        driver.get("https://example.com/");
+    }
+    @Test
+    public void goToURL2() {
+        driver.get("https://www.apple.com/");
+    }
+
+
 }
