@@ -28,5 +28,4 @@ public class tema02_04 {
         driver.get("https://www.apple.com/");
     }
 
-
 }
