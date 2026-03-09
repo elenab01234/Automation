@@ -1,0 +1,21 @@
+
+
+
+//input[contains(@placeholder, 'name@')]
+
+//button[text()='Submit']
+
+Gaseste primul text area din pagina
+//textarea[1]
+
+
+--------------- Relatii XPath
+//input[@placeholder='Full Name']/parent::div
+
+//label[@id='userName-label']/parent::div/following-sibling::div/child::input
+
+//button[contains(@id,'submit')]
+
+//span[contains(@role,'checkbox')]
+
+//input[contains(@class,'search')]
