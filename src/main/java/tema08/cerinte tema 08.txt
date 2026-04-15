@@ -1,0 +1,55 @@
+Exercițiul 1 – Encapsulare (basic)
+Creează clasa Book:
+- atribute private: title, author
+- getter + setter pentru fiecare
+- în main: creează obiect, setează valori, afișează-le
+
+Exercițiul 2 – Encapsulare cu validare
+Creează clasa Product:
+- private name, price
+- în setter pentru price: nu permite valori <= 0
+- testează valori valide și invalide
+
+Exercițiul 3 – Moștenire simplă
+Creează:
+- Device → metodă powerOn()
+- Phone extinde Device → metodă call()
+- în main: apelează metodele
+
+Exercițiul 4 – Encapsulare + Moștenire
+Creează:
+- Account → private username + getter/setter + metodă login()
+- AdminAccount extinde Account → metodă deleteUser()
+
+Exercițiul 5 – Constructor + Moștenire
+Creează:
+- Course → private courseName, duration + constructor
+- OnlineCourse extinde Course → atribut platform
+- creează obiect și afișează datele
+
+Exercițiul 6 – Override + Encapsulare
+Creează:
+- Notification → metodă send()
+- EmailNotification → private emailAddress + getter/setter + override send()
+
+Exercițiul 7 – protected vs private
+Creează:
+- Order → protected orderId + metodă printOrder()
+- OnlineOrder extinde Order → metodă trackOrder()
+- testează accesul la orderId
+
+Exercițiul 8 – Automation context
+Creează:
+- BasePage → protected WebDriver driver + constructor + metodă openUrl()
+- LoginPage extinde BasePage → metodă login(username, password)
+
+Exercițiul 9 – Encapsulare în test
+Creează:
+- User → private username, password + getter
+- LoginService → metodă login(User user)
+
+Exercițiul 10 – Mini framework
+Creează:
+- TestCase → protected name + metodă runTest()
+- clase copil: LoginTest, SearchTest (override runTest)
+- în main: rulează mai multe teste
