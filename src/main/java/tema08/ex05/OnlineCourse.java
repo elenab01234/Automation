@@ -1,9 +1,0 @@
-package tema08.ex05;
-
-public class OnlineCourse extends Course{
-    String platform;
-
-    public OnlineCourse(String onlineCourseName, int onlineCourseDuration) {
-        super(onlineCourseName, onlineCourseDuration);
-    }
-}

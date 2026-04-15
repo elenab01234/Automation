@@ -1,0 +1,10 @@
+package tema08_.ex09;
+
+public class Main {
+    public static void main(String[] args) {
+        User user = new User("Elena", "123456");
+        LoginService loginService = new LoginService();
+
+        loginService.login(user);
+    }
+}
