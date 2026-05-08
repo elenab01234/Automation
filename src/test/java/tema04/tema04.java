@@ -138,7 +138,6 @@ public class tema04 {
         boolean eco = driver.findElement(By.xpath( "//span[contains(@class,'rating-b')]")).isDisplayed();
         Assert.assertTrue(eco, "Produsul afisat nu respecta filtrul");
 
-
     }
 }
 
