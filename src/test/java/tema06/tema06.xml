@@ -1,0 +1,19 @@
+
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Rulare din xml tema06">
+
+    <test name="tema06">
+        <groups>
+            <run>
+                <include name="xml"/>
+                <exclude name="test"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="tema06.tema06"/>
+        </classes>
+    </test>
+</suite>
+
